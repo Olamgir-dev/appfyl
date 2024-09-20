@@ -21,7 +21,7 @@ function Index() {
     }, []);
     return (
         <HeaderStyle className='mix: md:h-[500px]'>
-            {isMobile && <Col xs={12} md={5} className='flex mix:w-[70%] mix:bg-[#FFFFFF] md:bg-[#FAFAFA] mix:h-[40%] mix:absolute mix:z-[0]' style={{ justifyContent: 'center' }} >
+            {isMobile && <Col xs={12} md={5} className='flex mix:w-[70%] mix:bg-[#FFFFFF] md:bg-[#FAFAFA] mix:h-[40%] mix:absolute mix:z-[0] ' style={{ justifyContent: 'center' }} >
                 <div className=' sm:w-[100%] flex justify-center' data-aos={!isMobile && "fade-left"}>
                     <img className='sm:w-[60%]  md:relative' src={phome} alt="phome" />
                 </div>
@@ -47,7 +47,7 @@ function Index() {
                 <Row className='mix:mt-[20px] md:mt-[50px] items-center'>
                     <div data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom">
-                        <Button padding='15px 30px' border={true} className='px-[20px] py-[10px] ml-3' >Sign up for a consultation</Button>
+                        <Button fs='18px' padding='15px 30px'   border={true} className='px-[20px] py-[10px] ml-3' >Sign up for a consultation</Button>
                     </div>
                 </Row>
             </Col>

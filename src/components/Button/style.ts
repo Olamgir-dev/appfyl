@@ -2,12 +2,13 @@ import styled from "styled-components";
 interface Props {
     padding?: string;
     border?: boolean;
+    fs?: string;
 }
 
 export const ButtonStyle = styled.button<Props>`
     padding:${({ padding }: Props) => padding || " 6px 18px"};
     color: #ffffff;
-    font-size: 14px;
+    font-size: ${({ fs }: Props) => fs || '14px'};
     font-family: 'SFDN', Arial, sans-serif;
     line-height: 1.55;
     font-weight: 700;

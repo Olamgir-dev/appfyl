@@ -3,6 +3,7 @@ import { ButtonStyle } from './style'
 
 function index({
     children,
+    fs,
     className,
     border,
     padding
@@ -11,10 +12,11 @@ function index({
     children: React.ReactNode
     className?: string,
     border?: boolean,
-    padding?: string
+    padding?: string,
+    fs?:string
 }) {
   return (
-    <ButtonStyle border={border} padding={padding} className={className}>
+    <ButtonStyle border={border} fs={fs} padding={padding} className={className}>
         {children}
     </ButtonStyle>
   )

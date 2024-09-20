@@ -20,8 +20,8 @@ export const NavbarStyle = styled(Row)`
         font-weight: 600;
         display: inline-block;
         margin: 0;
-        color: #3b3b3b;
-        white-space: nowrap;
+        color: #1c1c1c;
+        /* /* white-space: nowrap; */
         -webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
     transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
     position: relative;
