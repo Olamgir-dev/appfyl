@@ -9,7 +9,7 @@ export const SectionStyle = styled.section`
     padding-top: 200px;
    /* top:'500px'; */
     img{
-        width: 400px!important;
+        /* width: 400px!important; */
         /* position: absolute; */
         --tw-shadow: 20px 25px 50px 0px rgba(0, 0, 0, .25);
         --tw-shadow-colored: 20px 25px 50px 0px var(--tw-shadow-color);
