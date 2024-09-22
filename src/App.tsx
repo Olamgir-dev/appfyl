@@ -4,6 +4,19 @@ import { Header, Navbar, Scrooll, Skels } from './components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+
+declare global {
+  interface Window {
+    Telegram: {
+      WebApp: {
+        ready: () => void;
+        // Add more specific types if needed
+      };
+    };
+  }
+}
+
+const tele = window.Telegram.WebApp;
 function App() {
   useEffect(() => {
     AOS.init({
@@ -11,6 +24,7 @@ function App() {
       duration: 700,
       easing: "ease-out-cubic",
     });
+    tele.ready();
   }, []);
   return (
     <>
